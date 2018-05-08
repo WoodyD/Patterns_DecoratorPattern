@@ -1,11 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Patterns_DecoratorPattern.BeveragesMain {
 
-namespace Patterns_DecoratorPattern.BeveragesMain {
-	public class BeveragesBase {
+	public abstract class BeveragesBase {
+		protected string Description = "";
+		protected double Price;
 
+		protected double sugarPrice = 25;
+		protected double milkPrice = 40;
+		protected double chocoPrice = 75;
+
+		public string GetDescription () {
+			return Description;
+		}
+
+		public double GetPrice () {
+			return Price;
+		}
+		
 	}
 }

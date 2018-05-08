@@ -43,14 +43,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BeveragesMain\BeveragesBase.cs" />
+    <Compile Include="BeveragesMain\BlackTea.cs" />
+    <Compile Include="BeveragesMain\Coffee.cs" />
+    <Compile Include="BeveragesMain\GreenTea.cs" />
+    <Compile Include="Decorator\BeveragesAddsBase.cs" />
+    <Compile Include="Decorator\ChocolateAdd.cs" />
+    <Compile Include="Decorator\MilkAdd.cs" />
+    <Compile Include="Decorator\SugarAdd.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Decorator\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
